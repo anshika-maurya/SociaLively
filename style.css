@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+
+:root{
+    --bs-dark-color: #1a1d20;
+    --bs-dark-primary: #1c1c1c;
+    --bs-main-color: #fff;
+    --bs-primary-color: #c6c6c6;
+    --bs-secondary-color: #29a9fd;
+    --bs-supporting-color: #C850C0;
+    
+}
+
+
+h1,h2,h3,h4,h5{
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--bs-dark-color);
+}
+
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    line-height: 4rem;
+    font-weight: 600;
+    font-size: 3.4rem;
+}
+p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--bs-dark-color);
+    letter-spacing: 0.07rem;
+    line-height: 1.55rem;
+
+    /* CSS mein font-synthesis property ka istemaal browser ko yeh batane ke liye kiya jaata hai ki jab kisi font-family mein bold ya italic typefaces na ho to browser unhein kaise handle karega. 
+    Agar aap font-synthesis : none; likhte hain to browser kisi bhi font face ko bold ya italic nahi banayega. Isse aapka text jaisa hai waisa hi dikhega aur kisi bhi language ke characters ko obscure nahi hoga */
+    font-synthesis: none;
+
+    /* browser legibility ko speed aur geometric precision se zyada emphasize karta hai. 
+       Isse kuchh fonts mein kerning aur optional ligatures enable ho jaate hain */
+    /* do letters ke beech ka space adjust karna -->  kerning */
+    /* ‘f’ aur ‘i’ ko ‘fi’ mein jodna --> Ligatures  */
+    text-rendering: optimizeLegibility;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+button, a{
+    font-size: 1.15rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+}
+
+.common-heading{
+   font-size: 2.8rem;
+   font-weight: 500;
+   letter-spacing: 0.1rem!important;
+}
+.common-title{
+    margin-bottom: 4.2rem;
+}
+
+/* navbar style */
+.container .navbar-brand img{
+    width: 11.4vw;
+    margin-right: 30vw;
+    padding-right: 2vw;
+   
+   
+   
+}
+.container{
+    margin-top: 0;
+}
+.nav-link{
+    color: var(--bs-main-color);
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: var(--bs-secondary-color);
+}
+
+
+/* hero section start */
+
+.hero-section .container{
+    display: grid;
+   
+    /* mix of align-content and justify-content = place-content */
+    place-content: center;
+    height: inherit;
+    
+}
+
+.bg-main{
+    height: 80vh;
+    position: relative;
+}
+
+.bg-color{
+    background-color: var(--bs-dark-primary);
+}
+
+.text-light-grey{
+    color: var(--bs-primary-color);
+}
+.common-section{
+    padding: 0 0 9rem 0;
+}
+.bg-theme{
+    color: var(--bs-supporting-color);
+    font-weight: bold;
+    background-image: none!important;
+}
+
+.hero-video--section{
+    width: 30rem;
+    border-radius: 2rem;
+   
+}
+.hero-img--section{
+    width: 35rem;
+}
+
+.sepration{
+    display: none;
+}
+
+
+
+/* using shape divider website, for curve divison b/w page */
+
+.custom-shape-divider-bottom-1709034012 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1709034012 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1709034012 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* ends divider code  */
+
+/* service section */
+
+.services-section{
+    padding: 6rem 0 3rem 0!important;
+}
+
+.icon-span{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--bs-secondary-color) ;
+    color: var(--bs-main-color);
+}
+
+.card-box:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+}
+
+/* more-info-section style */
+
+/* parallax effect, background image */
+
+.more-info-section{
+
+    /* parallax effect ye bnaa deta hai = background-attachment: fixed; */
+   
+    background-image: linear-gradient(rgba(22, 22, 22, 0.803), rgba(22,22,22,0.9)),url(./Assets/images-giphy/build.jpg);
+    /* background-image: linear-gradient(rgba(22,22,22,0.7), rgba(22,22,22,0.9)), url("https://media.istockphoto.com/id/1314616897/photo/3d-render-abstract-urban-futuristic-background-cityscape-with-neon-light-starry-night-sky-and.webp?s=2048x2048&w=is&k=20&c=Q7oBRYhdNZzHCZ7UJO2sq4aboAjjoPJNiBqKrnpkwTk="); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 6rem 0;
+    overflow: hidden;
+}
+
+.more-info-section .img-section{
+    position: relative;
+}
+
+.more-info-section .img-section img{
+    width: 70%;
+}
+
+/* online mode styling */
+
+.business-section{
+    padding-top: 3rem;
+}
+
+/* carousel styling */
+.carousel .card{
+    background-color: #262631;
+    color: var(--bs-main-color);
+    transform: all 0.3s linear;
+}
+
+.carousel-inner .card p{
+    color: var(--bs-main-color);    
+}
+.carousel-inner .card:hover{
+    background-color: var(--bs-main-color);
+    color: var(--bs-dark-color);   
+}
+.carousel-inner .card:hover p{
+   color: var(--bs-dark-color);   
+}
+.fa-star{
+    color: var(--bs-supporting-color);
+}
+.carousel-indicators{
+    bottom: -20%;
+}
+.carousel-indicators [data-bs-target]{
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: var(--bs-secondary-color);
+}
+
+/* experts panel styling */
+
+.text-grey{
+    color: var(--bs-primary-color);
+}
+.text-light-grey{
+    color: var(--bs-primary-color);
+}
+
+/* contact section styling */
+
+.contact-section{
+    position: relative;
+}
+
+/* wave style starts */
+.custom-shape-divider-top-1709098300 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1709098300 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1709098300 .shape-fill {
+    fill: #FFFFFF;
+}
+/* wave style ends */
+
+.contact-section .common-title{
+    padding: 6rem;
+}
+
+.contact-section .form-section{
+    width: 50%;
+}
+
+.main-footer-section{
+    padding: 0 0 4rem 0;
+    color: var(--bs-main-color);
+}
+form{
+    width: 100% ;
+}
+
+.contact-div{
+    background-color: #222;   
+   
+}
+
+.icon-div{
+    width: 5.5rem;
+    height: 5.5rem;
+}
+.icon-div .img-fluid1{
+    width: 9.5rem;
+    height: 7rem;
+    
+}
+.icon-div .img-fluid2{
+    width: 23rem;
+    height: 7.8rem;
+}
+
+
+
+/* responsivness */
+
+@media screen and (max-width: 1200px) {
+
+   .card-box{
+    box-shadow: 2px 2px 5px lightgray;
+    } 
+    
+   .hero-video--section{
+    width: 20rem;
+    border-radius: 1rem;
+   }
+   /* .hero-img--section{
+    width: 20rem;
+    margin-top: 16rem;
+    } */
+    /* .row h2{
+        padding: 2rem;
+    }
+    .row p{
+        padding: 0 4rem 0 4rem;
+        
+    } */
+    .sepration{
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: rgb(51, 50, 50);
+    }
+    /* .company-title{
+        padding: 0 4rem 0 4rem;
+        text-align: center;
+    } */
+
+    
+    form{
+        width: 130% ;
+    }
+
+    .paraa{
+        margin-bottom: 2rem;
+    }
+    .hero-img--section{
+        margin-top: 6rem;
+    }
+    
+    
+   
+}
+
+@media screen and (max-width: 998px) {
+    .navbar-toggler{
+        background-color: var(--bs-main-color);
+        
+    }
+    .navbar-toggler-icon{
+        color: var(--bs-main-color);
+        background-color: var(--bs-main-color);
+    }
+
+    h1{
+        font-size: 2.4rem;
+    }
+
+    section .common-heading{
+        font-size: 2rem;
+    }
+
+    section .para-width{
+        width: auto;
+    }
+    .hero-section{
+        height: 100vh;
+       
+    }
+    h2{
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+    .more-info-section{
+        text-align: center;
+    }
+
+    .carousel .carousel-indicators{
+        bottom: -8%;
+    }
+
+}
+/* about section */
+
+.company-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--bs-dark-primary);
+  
+
+   
+}
+
+.company-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-left: 1.2rem;
+    border: none;
+    border-radius: 0.625rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    padding: 1.1rem 1.5rem;
+    background-color: rgba(78, 75, 75, 0.533);
+}
+.company-title{
+ margin-left: 1rem;  
+}
+.company-logo{
+    font-size: 0.5rem;
+    font-weight: 450;
+    color: lightgray;
+    display: flex;
+    gap: 0.2rem;
+    
+}
+.svg-img{
+    height: 2rem;
+   
+}
+.logo-txt{
+    font-size: 1.6rem;
+    
+}
+
+@media screen and (min-width: 640px) {
+    
+    .company-grid{
+        grid-template-columns: repeat(4, 1fr);
+        border-radius: 0.625rem;
+        padding: 1.2rem 1.8rem;
+       
+    }
+
+    .company-title{
+        font-size: 1.2rem;
+       margin-left: 1rem;
+       margin-right: 1rem;
+       
+    }
+    .svg-img{
+        height: 2.2rem;
+       
+    }
+    .logo-txt{
+        font-size: 1.8rem;
+        
+    }
+}
+
