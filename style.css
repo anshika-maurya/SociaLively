@@ -24,23 +24,30 @@ h1,h2,h3,h4,h5{
     font-family: "Lexend Deca", sans-serif;
     color: var(--bs-dark-color);
 }
+h5{
+    font-size: 1rem;
+}
 
 h1{
-    font-size: 3.8rem;
+    font-size: 3rem;
+    line-height: normal;
+    /* font-size: 3.8rem; */
 }
 
 h2{
-    line-height: 4rem;
+    line-height: 3.4rem;
     font-weight: 600;
-    font-size: 3.4rem;
+    font-size: 2.8rem;
 }
 p{
     margin: 0;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: .75rem;
+    /* font-size: 1rem; */
     color: var(--bs-dark-color);
     letter-spacing: 0.07rem;
-    line-height: 1.55rem;
+    line-height: 1.25rem;
+    /* line-height: 1.55rem; */
 
     /* CSS mein font-synthesis property ka istemaal browser ko yeh batane ke liye kiya jaata hai ki jab kisi font-family mein bold ya italic typefaces na ho to browser unhein kaise handle karega. 
     Agar aap font-synthesis : none; likhte hain to browser kisi bhi font face ko bold ya italic nahi banayega. Isse aapka text jaisa hai waisa hi dikhega aur kisi bhi language ke characters ko obscure nahi hoga */
@@ -52,6 +59,7 @@ p{
     /* ‘f’ aur ‘i’ ko ‘fi’ mein jodna --> Ligatures  */
     text-rendering: optimizeLegibility;
 }
+
 
 a{
     text-decoration: none;
@@ -68,13 +76,18 @@ button, a{
 }
 
 .common-heading{
-   font-size: 2.8rem;
+   font-size: 2.2rem;
    font-weight: 500;
    letter-spacing: 0.1rem!important;
 }
 .common-title{
     margin-bottom: 4.2rem;
 }
+.container{
+    width: 78%;
+    /* width: 1050px; */
+}
+
 
 /* navbar style */
 .container .navbar-brand img{
@@ -87,6 +100,7 @@ button, a{
 }
 .container{
     margin-top: 0;
+   
 }
 .nav-link{
     color: var(--bs-main-color);
@@ -97,7 +111,9 @@ button, a{
     color: var(--bs-secondary-color);
 }
 
-
+.sepration{
+    display: none;
+}
 /* hero section start */
 
 .hero-section .container{
@@ -131,7 +147,8 @@ button, a{
 }
 
 .hero-video--section{
-    width: 30rem;
+    width: 25.002rem;
+    /* width: 30rem; */
     border-radius: 2rem;
    
 }
@@ -139,9 +156,7 @@ button, a{
     width: 35rem;
 }
 
-.sepration{
-    display: none;
-}
+
 
 
 
@@ -161,7 +176,7 @@ button, a{
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 150px;
+    height: 156px;
 }
 
 .custom-shape-divider-bottom-1709034012 .shape-fill {
@@ -174,11 +189,12 @@ button, a{
 
 .services-section{
     padding: 6rem 0 3rem 0!important;
+    
 }
 
 .icon-span{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     background-color: var(--bs-secondary-color) ;
     color: var(--bs-main-color);
 }
@@ -243,8 +259,8 @@ button, a{
     bottom: -20%;
 }
 .carousel-indicators [data-bs-target]{
-    width: 0.7rem;
-    height: 0.7rem;
+    width: 0.57rem;
+    height: 0.57rem;
     background-color: var(--bs-secondary-color);
 }
 
@@ -256,6 +272,7 @@ button, a{
 .text-light-grey{
     color: var(--bs-primary-color);
 }
+
 
 /* contact section styling */
 
@@ -307,25 +324,40 @@ form{
 }
 
 .icon-div{
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
 }
 .icon-div .img-fluid1{
-    width: 9.5rem;
-    height: 7rem;
+    width: 7rem;
+    height: 5.6rem;
     
 }
 .icon-div .img-fluid2{
-    width: 23rem;
-    height: 7.8rem;
+    width: 17rem;
+    height: 7.4rem;
 }
+
 
 
 
 /* responsivness */
 
-@media screen and (max-width: 1200px) {
 
+@media screen and (max-width: 990px) {
+    .container{
+        margin-top: 0;
+       width: 100%;
+    }
+    .sepration{
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: rgb(51, 50, 50);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    
    .card-box{
     box-shadow: 2px 2px 5px lightgray;
     } 
@@ -482,3 +514,18 @@ form{
     }
 }
 
+.footer-links h4{
+    font-size: 1.2rem;
+}
+.footer-links a{
+    font-size: .9rem;
+}
+.footer-links .form-control{
+    font-size: .8rem;
+}
+.footer-links .input-group-text{
+    font-size: .9rem;
+}
+.fnam{
+    font-size: .8rem;
+}
