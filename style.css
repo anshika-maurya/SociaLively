@@ -147,7 +147,7 @@ button, a{
 }
 
 .hero-video--section{
-    width: 25.002rem;
+    width: 26.7rem;
     /* width: 30rem; */
     border-radius: 2rem;
    
@@ -361,32 +361,20 @@ form{
    .card-box{
     box-shadow: 2px 2px 5px lightgray;
     } 
-    
-   .hero-video--section{
-    width: 20rem;
-    border-radius: 1rem;
-   }
-   /* .hero-img--section{
-    width: 20rem;
-    margin-top: 16rem;
-    } */
-    /* .row h2{
-        padding: 2rem;
-    }
-    .row p{
-        padding: 0 4rem 0 4rem;
-        
-    } */
+
     .sepration{
         display: block;
-        height: 3px;
+        height: 2px;
         width: 100%;
         background-color: rgb(51, 50, 50);
     }
-    /* .company-title{
-        padding: 0 4rem 0 4rem;
-        text-align: center;
-    } */
+    
+   .hero-video--section{
+    margin-top: -30rem;
+    width: 20.2rem;
+    border-radius: 1rem;
+   }
+  
 
     
     form{
