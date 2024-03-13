@@ -90,10 +90,11 @@ button, a{
 
 
 /* navbar style */
-.container .navbar-brand img{
-    width: 11.4vw;
-    margin-right: 30vw;
+.container .navbar-brand{
+   width: 11.4vw;
+    margin-right: 33vw;
     padding-right: 2vw;
+    font-size: .9rem;
    
    
    
@@ -350,7 +351,7 @@ form{
     }
     .sepration{
         display: block;
-        height: 3px;
+        height: .88px;
         width: 100%;
         background-color: rgb(51, 50, 50);
     }
@@ -362,16 +363,11 @@ form{
     box-shadow: 2px 2px 5px lightgray;
     } 
 
-    .sepration{
-        display: block;
-        height: 2px;
-        width: 100%;
-        background-color: rgb(51, 50, 50);
-    }
+    
     
    .hero-video--section{
     margin-top: -30rem;
-    width: 20.2rem;
+    width: 20.6rem;
     border-radius: 1rem;
    }
   
